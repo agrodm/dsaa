@@ -1,0 +1,13 @@
+regressionpls.py:
+	To affect different treatments -- Savgol/MSC/RDP -- the flags in lines 248, 249, 250 have to be set to true
+
+	The file to be treated has to be passed on the command line, and has to be in CSV format
+
+run-regression.pl:
+	takes the data file to be predicted as first argument
+	the output file into which results should be written as second argument
+	the number of repetitions (since train/test data is split randomly) as third argument
+
+eval-regression.pl:
+	takes the results file (output by run-regression.pl) as first and only command line argument and translates the numerical predictions into hard labels, it also calculates accuracy
+
